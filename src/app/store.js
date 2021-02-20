@@ -1,8 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import countryReducer from '../features/countrySlice';
+import tableReducer from '../features/tableSlice';
+import chartDataReducer from '../features/chartDataSlice';
+import mapReducer from '../features/mapSlice';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    country: countryReducer,
+    table: tableReducer,
+    chart: chartDataReducer,
+    map: mapReducer
   },
 });
